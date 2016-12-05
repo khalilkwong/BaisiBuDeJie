@@ -16,22 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setUpNav];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setUpNav {
+    //设置左边 barButtonItem
+    //如果直接用 btn 来包装 barBtnItem  超过 btn 的部分  btn 也会响应
+    //    用一个 view 来包装
+    
+    
+    self.navigationItem.leftBarButtonItem = [KZPBarBtnItem barButtonItemWithImageName:@"friendsRecommentIcon" hightlightedImageName:@"friendsRecommentIcon-click" andAddTarget:self action:@selector(friendsRecommentBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    //设置 中间
+    self.navigationItem.title = @"我的关注";
+    
 }
-*/
+- (void)friendsRecommentBtnClick {
+    
+}
 
 @end

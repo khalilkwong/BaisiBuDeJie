@@ -16,22 +16,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setUpViews];
+    [self setUpNav];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setUpViews {
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 375, 44)];
+    view.backgroundColor = [UIColor blueColor];
+    
+    UITableView *tableV = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, 375, 603)];
+    [self.view addSubview:tableV];
+    [self.view addSubview:view];
+}
+- (void)setUpNav {
+    //设置左边 barButtonItem
+    //如果直接用 btn 来包装 barBtnItem  超过 btn 的部分  btn 也会响应
+//    用一个 view 来包装
+    
+
+    self.navigationItem.leftBarButtonItem = [KZPBarBtnItem barButtonItemWithImageName:@"nav_item_game_iconN" hightlightedImageName:@"nav_item_game_click_iconN" andAddTarget:self action:@selector(gameBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    //设置 中间
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    //设置右边
+  
+    self.navigationItem.rightBarButtonItem = [KZPBarBtnItem barButtonItemWithImageName:@"navigationButtonRandomN" hightlightedImageName:@"navigationButtonRandomClickN" andAddTarget:self action:@selector(randomBtnClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+#pragma mark - 导航栏按键点击方法
+- (void)gameBtnClick {
+    NSLog(@"%s",__func__);
 }
-*/
+
+- (void)randomBtnClick {
+    NSLog(@"%s",__func__);
+
+}
+
+
 
 @end

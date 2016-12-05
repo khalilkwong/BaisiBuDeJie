@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KZPFriendTrendsController : UINavigationController
+@interface KZPFriendTrendsController : UIViewController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KZPPublishController : UINavigationController
+@interface KZPPublishController : UIViewController
 
 @end

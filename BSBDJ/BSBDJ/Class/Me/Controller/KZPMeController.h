@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KZPMeController : UINavigationController
+@interface KZPMeController : UIViewController
 
 @end
