@@ -21,7 +21,11 @@
 		F94BC4111DF3E9AA0037B478 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC4101DF3E9AA0037B478 /* UIImage+Render.m */; };
 		F94BC4171DF44B040037B478 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC4161DF44B040037B478 /* UIColor+RandomColor.m */; };
 		F94BC41A1DF456A60037B478 /* KZPNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC4191DF456A60037B478 /* KZPNavController.m */; };
-		F94BC4411DF503BD0037B478 /* KZPBarBtnItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC4401DF503BD0037B478 /* KZPBarBtnItem.m */; };
+		F94BC4451DF558EE0037B478 /* UIBarButtonItem+KZPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC4441DF558EE0037B478 /* UIBarButtonItem+KZPItem.m */; };
+		F94BC44C1DF567A30037B478 /* KZPSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC44B1DF567A30037B478 /* KZPSettingController.m */; };
+		F9D5139D1DF5D7B9003BD029 /* KZPNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */; };
+		F9D513A01DF5D974003BD029 /* KZPBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139F1DF5D974003BD029 /* KZPBackView.m */; };
+		F9D513A31DF5E129003BD029 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D513A21DF5E129003BD029 /* UIView+frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +55,17 @@
 		F94BC4161DF44B040037B478 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
 		F94BC4181DF456A60037B478 /* KZPNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPNavController.h; sourceTree = "<group>"; };
 		F94BC4191DF456A60037B478 /* KZPNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPNavController.m; sourceTree = "<group>"; };
-		F94BC43F1DF503BD0037B478 /* KZPBarBtnItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPBarBtnItem.h; sourceTree = "<group>"; };
-		F94BC4401DF503BD0037B478 /* KZPBarBtnItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPBarBtnItem.m; sourceTree = "<group>"; };
 		F94BC4421DF505E20037B478 /* BSBDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSBDJ.pch; sourceTree = "<group>"; };
+		F94BC4431DF558EE0037B478 /* UIBarButtonItem+KZPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+KZPItem.h"; sourceTree = "<group>"; };
+		F94BC4441DF558EE0037B478 /* UIBarButtonItem+KZPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+KZPItem.m"; sourceTree = "<group>"; };
+		F94BC44A1DF567A30037B478 /* KZPSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPSettingController.h; sourceTree = "<group>"; };
+		F94BC44B1DF567A30037B478 /* KZPSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPSettingController.m; sourceTree = "<group>"; };
+		F9D5139B1DF5D7B9003BD029 /* KZPNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPNavBar.h; sourceTree = "<group>"; };
+		F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPNavBar.m; sourceTree = "<group>"; };
+		F9D5139E1DF5D974003BD029 /* KZPBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPBackView.h; sourceTree = "<group>"; };
+		F9D5139F1DF5D974003BD029 /* KZPBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPBackView.m; sourceTree = "<group>"; };
+		F9D513A11DF5E129003BD029 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		F9D513A21DF5E129003BD029 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,7 @@
 				F94BC3F01DF3D85F0037B478 /* Publish */,
 				F94BC3DD1DF3D85F0037B478 /* FriendTrends */,
 				F94BC3E51DF3D85F0037B478 /* Me */,
+				F94BC4461DF567410037B478 /* Setting */,
 				F94BC3ED1DF3D85F0037B478 /* Other */,
 			);
 			path = Class;
@@ -204,8 +217,6 @@
 				F94BC3F51DF3D8D10037B478 /* KZPMainController.m */,
 				F94BC4181DF456A60037B478 /* KZPNavController.h */,
 				F94BC4191DF456A60037B478 /* KZPNavController.m */,
-				F94BC43F1DF503BD0037B478 /* KZPBarBtnItem.h */,
-				F94BC4401DF503BD0037B478 /* KZPBarBtnItem.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +304,9 @@
 		F94BC3ED1DF3D85F0037B478 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F9D513981DF5D762003BD029 /* Controller */,
+				F9D513991DF5D762003BD029 /* Model */,
+				F9D5139A1DF5D762003BD029 /* View */,
 				F94BC3EE1DF3D85F0037B478 /* Category */,
 				F94BC3EF1DF3D85F0037B478 /* FrameWork */,
 			);
@@ -302,10 +316,14 @@
 		F94BC3EE1DF3D85F0037B478 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F9D513A11DF5E129003BD029 /* UIView+frame.h */,
+				F9D513A21DF5E129003BD029 /* UIView+frame.m */,
 				F94BC40F1DF3E9AA0037B478 /* UIImage+Render.h */,
 				F94BC4101DF3E9AA0037B478 /* UIImage+Render.m */,
 				F94BC4151DF44B040037B478 /* UIColor+RandomColor.h */,
 				F94BC4161DF44B040037B478 /* UIColor+RandomColor.m */,
+				F94BC4431DF558EE0037B478 /* UIBarButtonItem+KZPItem.h */,
+				F94BC4441DF558EE0037B478 /* UIBarButtonItem+KZPItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -344,6 +362,64 @@
 			sourceTree = "<group>";
 		};
 		F94BC3F31DF3D85F0037B478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F94BC4461DF567410037B478 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F94BC4471DF567410037B478 /* Controller */,
+				F94BC4481DF567410037B478 /* Model */,
+				F94BC4491DF567410037B478 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F94BC4471DF567410037B478 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F94BC44A1DF567A30037B478 /* KZPSettingController.h */,
+				F94BC44B1DF567A30037B478 /* KZPSettingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F94BC4481DF567410037B478 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F94BC4491DF567410037B478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9D513981DF5D762003BD029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5139B1DF5D7B9003BD029 /* KZPNavBar.h */,
+				F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */,
+				F9D5139E1DF5D974003BD029 /* KZPBackView.h */,
+				F9D5139F1DF5D974003BD029 /* KZPBackView.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9D513991DF5D762003BD029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9D5139A1DF5D762003BD029 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -429,12 +505,16 @@
 				F94BC4021DF3D95E0037B478 /* KZPMeController.m in Sources */,
 				F94BC41A1DF456A60037B478 /* KZPNavController.m in Sources */,
 				F94BC3FF1DF3D9370037B478 /* KZPPublishController.m in Sources */,
+				F9D513A01DF5D974003BD029 /* KZPBackView.m in Sources */,
 				F94BC3F61DF3D8D10037B478 /* KZPMainController.m in Sources */,
+				F9D513A31DF5E129003BD029 /* UIView+frame.m in Sources */,
 				F94BC4171DF44B040037B478 /* UIColor+RandomColor.m in Sources */,
+				F94BC4451DF558EE0037B478 /* UIBarButtonItem+KZPItem.m in Sources */,
 				F94BC3C61DF3D6B90037B478 /* AppDelegate.m in Sources */,
+				F94BC44C1DF567A30037B478 /* KZPSettingController.m in Sources */,
 				F94BC3FC1DF3D91D0037B478 /* KZPFriendTrendsController.m in Sources */,
 				F94BC3C31DF3D6B90037B478 /* main.m in Sources */,
-				F94BC4411DF503BD0037B478 /* KZPBarBtnItem.m in Sources */,
+				F9D5139D1DF5D7B9003BD029 /* KZPNavBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

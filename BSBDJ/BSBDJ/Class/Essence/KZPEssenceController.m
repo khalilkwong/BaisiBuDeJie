@@ -36,14 +36,14 @@
 //    用一个 view 来包装
     
 
-    self.navigationItem.leftBarButtonItem = [KZPBarBtnItem barButtonItemWithImageName:@"nav_item_game_iconN" hightlightedImageName:@"nav_item_game_click_iconN" andAddTarget:self action:@selector(gameBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"nav_item_game_iconN" hightlightedImageName:@"nav_item_game_click_iconN" andAddTarget:self action:@selector(gameBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     //设置 中间
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
     //设置右边
   
-    self.navigationItem.rightBarButtonItem = [KZPBarBtnItem barButtonItemWithImageName:@"navigationButtonRandomN" hightlightedImageName:@"navigationButtonRandomClickN" andAddTarget:self action:@selector(randomBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"navigationButtonRandomN" hightlightedImageName:@"navigationButtonRandomClickN" andAddTarget:self action:@selector(randomBtnClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 

@@ -7,6 +7,7 @@
 //
 
 #import "KZPNavController.h"
+#import "KZPNavBar.h"
 
 @interface KZPNavController ()
 
@@ -26,7 +27,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+     [self setValue:[[KZPNavBar alloc]init] forKey:@"navigationBar"];
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.childViewControllers.count > 0) {
+
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[KZPBackView viewWithTarget:self action:@selector(back)]];
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
+- (void)back {
+    [self popViewControllerAnimated:YES];
+}
 @end

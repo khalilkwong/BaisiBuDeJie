@@ -32,7 +32,7 @@
     //    用一个 view 来包装
     
     
-    self.navigationItem.leftBarButtonItem = [KZPBarBtnItem barButtonItemWithImageName:@"MainTagSubIcon" hightlightedImageName:@"MainTagSubIconClick" andAddTarget:self action:@selector(mainTagBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"MainTagSubIcon" hightlightedImageName:@"MainTagSubIconClick" andAddTarget:self action:@selector(mainTagBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     //设置 中间
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];

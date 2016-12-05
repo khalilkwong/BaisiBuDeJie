@@ -30,7 +30,7 @@
     //    用一个 view 来包装
     
     
-    self.navigationItem.leftBarButtonItem = [KZPBarBtnItem barButtonItemWithImageName:@"friendsRecommentIcon" hightlightedImageName:@"friendsRecommentIcon-click" andAddTarget:self action:@selector(friendsRecommentBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"friendsRecommentIcon" hightlightedImageName:@"friendsRecommentIcon-click" andAddTarget:self action:@selector(friendsRecommentBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     //设置 中间
     self.navigationItem.title = @"我的关注";
