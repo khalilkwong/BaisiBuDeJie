@@ -18,14 +18,20 @@
 /*** 日志 ***/
 #ifdef DEBUG
 #define KZPLog(...) NSLog(__VA_ARGS__)
+#define KZPLogFunc NSLog(@"%s",__func_)
 #else
 #define KZPLog(...)
+#define KZPLogFunc
 #endif
 
 
 #import "UIBarButtonItem+KZPItem.h"
 #import "KZPBackView.h"
 #import "UIView+frame.h"
+#import "AFHTTPSessionManager+KZPManager.h"
+
+#define  ScreenW     [UIScreen mainScreen].bounds.size.width
+#define  ScreenH     [UIScreen mainScreen].bounds.size.height
 
 #endif
 /***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/

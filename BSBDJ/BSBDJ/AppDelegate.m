@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "KZPMainController.h"
+#import "KZPADController.h"
+#import <AFNetworking.h>
 
 @interface AppDelegate ()
 
@@ -20,11 +22,13 @@
     //创建窗口
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     //设置根控制器
-    KZPMainController *mainC = [[KZPMainController alloc]init];
+//    KZPMainController *mainC = [[KZPMainController alloc]init];
+    KZPADController *mainC = [[KZPADController alloc]init];
     self.window.rootViewController = mainC;
     //显示窗口
     [self.window makeKeyAndVisible];
     return YES;
+    
 }
 
 
