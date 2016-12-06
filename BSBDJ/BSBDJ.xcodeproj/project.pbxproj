@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA8ACEFAD6F9C9503F99BC3 /* libPods-BSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */; };
 		F94BC3C31DF3D6B90037B478 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3C21DF3D6B90037B478 /* main.m */; };
 		F94BC3C61DF3D6B90037B478 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3C51DF3D6B90037B478 /* AppDelegate.m */; };
 		F94BC3CC1DF3D6B90037B478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94BC3CA1DF3D6B90037B478 /* Main.storyboard */; };
@@ -29,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BSBDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D731AE744B43470C5DDB6C /* Pods-BSBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.release.xcconfig"; sourceTree = "<group>"; };
+		F08513D13DB38449D587F446 /* Pods-BSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
 		F94BC3BE1DF3D6B90037B478 /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94BC3C21DF3D6B90037B478 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F94BC3C41DF3D6B90037B478 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,17 +77,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA8ACEFAD6F9C9503F99BC3 /* libPods-BSBDJ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		136FB85854A6484CAFAB4FD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C49517B07DF6E7CB726F10DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F08513D13DB38449D587F446 /* Pods-BSBDJ.debug.xcconfig */,
+				E5D731AE744B43470C5DDB6C /* Pods-BSBDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F94BC3B51DF3D6B90037B478 = {
 			isa = PBXGroup;
 			children = (
 				F94BC3C01DF3D6B90037B478 /* BSBDJ */,
 				F94BC3BF1DF3D6B90037B478 /* Products */,
+				C49517B07DF6E7CB726F10DA /* Pods */,
+				136FB85854A6484CAFAB4FD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -433,9 +457,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F94BC3D51DF3D6B90037B478 /* Build configuration list for PBXNativeTarget "BSBDJ" */;
 			buildPhases = (
+				D047F710AF215599C23653A1 /* [CP] Check Pods Manifest.lock */,
 				F94BC3BA1DF3D6B90037B478 /* Sources */,
 				F94BC3BB1DF3D6B90037B478 /* Frameworks */,
 				F94BC3BC1DF3D6B90037B478 /* Resources */,
+				C7994F3AD3E219BF266493B9 /* [CP] Embed Pods Frameworks */,
+				EA8F8939B928DFCE75939CA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -493,6 +520,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7994F3AD3E219BF266493B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D047F710AF215599C23653A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA8F8939B928DFCE75939CA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F94BC3BA1DF3D6B90037B478 /* Sources */ = {
@@ -630,6 +705,7 @@
 		};
 		F94BC3D61DF3D6B90037B478 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08513D13DB38449D587F446 /* Pods-BSBDJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -644,6 +720,7 @@
 		};
 		F94BC3D71DF3D6B90037B478 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D731AE744B43470C5DDB6C /* Pods-BSBDJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
