@@ -10,51 +10,51 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KZPADController">
             <connections>
-                <outlet property="ADImageV" destination="y1S-od-t87" id="eYz-aW-yqM"/>
-                <outlet property="launchImageV" destination="iug-nP-N47" id="hDR-Yt-0qA"/>
-                <outlet property="skipBtn" destination="Gzo-mK-RRI" id="ddE-tZ-THZ"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="adImageV" destination="IWI-ut-FAq" id="CuY-oT-rsu"/>
+                <outlet property="launchImagV" destination="ivx-2z-5ys" id="rj7-u4-zkQ"/>
+                <outlet property="skipBtn" destination="ff6-fd-Poa" id="DXR-sL-fw8"/>
+                <outlet property="view" destination="9cy-WD-DcV" id="y2f-GX-aES"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9cy-WD-DcV">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iug-nP-N47">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ivx-2z-5ys">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y1S-od-t87" userLabel="ADImageView">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWI-ut-FAq" userLabel="ADImageView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-mK-RRI">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-fd-Poa">
                     <rect key="frame" x="275" y="30" width="80" height="30"/>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Ohd-jz-65p"/>
-                        <constraint firstAttribute="width" constant="80" id="bkc-Ma-uqx"/>
+                        <constraint firstAttribute="height" constant="30" id="2Gr-Ax-SAb"/>
+                        <constraint firstAttribute="width" constant="80" id="Bmo-bi-kj6"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="跳过 3s">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="skipBtnClick:" destination="-1" eventType="touchUpInside" id="3Os-4t-5sh"/>
+                        <action selector="skipBtnClick" destination="-1" eventType="touchUpInside" id="k4C-X6-i22"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="y1S-od-t87" secondAttribute="bottom" id="2o2-25-wbK"/>
-                <constraint firstAttribute="trailing" secondItem="y1S-od-t87" secondAttribute="trailing" id="4P7-Xu-oQF"/>
-                <constraint firstItem="y1S-od-t87" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Ip-kn-HZC"/>
-                <constraint firstAttribute="bottom" secondItem="iug-nP-N47" secondAttribute="bottom" id="G2H-zj-Cz0"/>
-                <constraint firstItem="y1S-od-t87" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H0X-Db-oPP"/>
-                <constraint firstAttribute="trailing" secondItem="Gzo-mK-RRI" secondAttribute="trailing" constant="20" id="L0s-Yj-8CU"/>
-                <constraint firstAttribute="trailing" secondItem="iug-nP-N47" secondAttribute="trailing" id="fSD-2E-bQk"/>
-                <constraint firstItem="Gzo-mK-RRI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="nSY-0E-v8A"/>
-                <constraint firstItem="iug-nP-N47" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vrz-FE-DUR"/>
-                <constraint firstItem="iug-nP-N47" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vu2-Y0-bIM"/>
+                <constraint firstAttribute="trailing" secondItem="IWI-ut-FAq" secondAttribute="trailing" id="1x7-cI-tQh"/>
+                <constraint firstItem="ivx-2z-5ys" firstAttribute="top" secondItem="9cy-WD-DcV" secondAttribute="top" id="F4j-Z7-UMe"/>
+                <constraint firstItem="IWI-ut-FAq" firstAttribute="leading" secondItem="9cy-WD-DcV" secondAttribute="leading" id="G18-sg-Q2X"/>
+                <constraint firstAttribute="trailing" secondItem="ivx-2z-5ys" secondAttribute="trailing" id="LQT-fV-cuy"/>
+                <constraint firstAttribute="bottom" secondItem="IWI-ut-FAq" secondAttribute="bottom" id="Lne-Yw-i2E"/>
+                <constraint firstItem="IWI-ut-FAq" firstAttribute="top" secondItem="9cy-WD-DcV" secondAttribute="top" id="PYr-6N-crd"/>
+                <constraint firstAttribute="bottom" secondItem="ivx-2z-5ys" secondAttribute="bottom" id="Rh6-3Q-pgp"/>
+                <constraint firstAttribute="trailing" secondItem="ff6-fd-Poa" secondAttribute="trailing" constant="20" id="X3E-qb-NLH"/>
+                <constraint firstItem="ff6-fd-Poa" firstAttribute="top" secondItem="9cy-WD-DcV" secondAttribute="top" constant="30" id="bbF-IQ-F8f"/>
+                <constraint firstItem="ivx-2z-5ys" firstAttribute="leading" secondItem="9cy-WD-DcV" secondAttribute="leading" id="kVa-IF-hvU"/>
             </constraints>
             <point key="canvasLocation" x="32.5" y="81.5"/>
         </view>

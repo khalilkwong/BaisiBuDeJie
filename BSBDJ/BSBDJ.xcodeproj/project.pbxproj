@@ -10,6 +10,7 @@
 		1CA8ACEFAD6F9C9503F99BC3 /* libPods-BSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */; };
 		F905FA4D1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */; };
 		F905FA501DF7285900D9EE8E /* KZPADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F905FA4F1DF7285900D9EE8E /* KZPADItem.m */; };
+		F93C5E611DF7E3E300456F97 /* KZPADController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93C5E601DF7E3E300456F97 /* KZPADController.m */; };
 		F94BC3C31DF3D6B90037B478 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3C21DF3D6B90037B478 /* main.m */; };
 		F94BC3C61DF3D6B90037B478 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3C51DF3D6B90037B478 /* AppDelegate.m */; };
 		F94BC3CC1DF3D6B90037B478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94BC3CA1DF3D6B90037B478 /* Main.storyboard */; };
@@ -33,7 +34,6 @@
 		F9A5E9271DF6E0DA004C7CE0 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E9201DF6E0DA004C7CE0 /* LaunchImage-800-Portrait-736h@3x.png */; };
 		F9A5E9281DF6E0DA004C7CE0 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E9211DF6E0DA004C7CE0 /* LaunchImage.png */; };
 		F9A5E9291DF6E0DA004C7CE0 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E9221DF6E0DA004C7CE0 /* LaunchImage@2x.png */; };
-		F9A5E92D1DF6E117004C7CE0 /* KZPADController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A5E92B1DF6E117004C7CE0 /* KZPADController.m */; };
 		F9A5E92E1DF6E117004C7CE0 /* KZPADController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E92C1DF6E117004C7CE0 /* KZPADController.xib */; };
 		F9D5139D1DF5D7B9003BD029 /* KZPNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */; };
 		F9D513A01DF5D974003BD029 /* KZPBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139F1DF5D974003BD029 /* KZPBackView.m */; };
@@ -48,6 +48,8 @@
 		F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+KZPManager.m"; sourceTree = "<group>"; };
 		F905FA4E1DF7285900D9EE8E /* KZPADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPADItem.h; sourceTree = "<group>"; };
 		F905FA4F1DF7285900D9EE8E /* KZPADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPADItem.m; sourceTree = "<group>"; };
+		F93C5E5F1DF7E3E300456F97 /* KZPADController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPADController.h; sourceTree = "<group>"; };
+		F93C5E601DF7E3E300456F97 /* KZPADController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPADController.m; sourceTree = "<group>"; };
 		F94BC3BE1DF3D6B90037B478 /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94BC3C21DF3D6B90037B478 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F94BC3C41DF3D6B90037B478 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,8 +88,6 @@
 		F9A5E9201DF6E0DA004C7CE0 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		F9A5E9211DF6E0DA004C7CE0 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		F9A5E9221DF6E0DA004C7CE0 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
-		F9A5E92A1DF6E117004C7CE0 /* KZPADController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPADController.h; sourceTree = "<group>"; };
-		F9A5E92B1DF6E117004C7CE0 /* KZPADController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPADController.m; sourceTree = "<group>"; };
 		F9A5E92C1DF6E117004C7CE0 /* KZPADController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KZPADController.xib; sourceTree = "<group>"; };
 		F9D5139B1DF5D7B9003BD029 /* KZPNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPNavBar.h; sourceTree = "<group>"; };
 		F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPNavBar.m; sourceTree = "<group>"; };
@@ -467,8 +467,8 @@
 		F9A5E9181DF6E084004C7CE0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F9A5E92A1DF6E117004C7CE0 /* KZPADController.h */,
-				F9A5E92B1DF6E117004C7CE0 /* KZPADController.m */,
+				F93C5E5F1DF7E3E300456F97 /* KZPADController.h */,
+				F93C5E601DF7E3E300456F97 /* KZPADController.m */,
 				F9A5E92C1DF6E117004C7CE0 /* KZPADController.xib */,
 			);
 			path = Controller;
@@ -673,7 +673,7 @@
 				F94BC4171DF44B040037B478 /* UIColor+RandomColor.m in Sources */,
 				F94BC4451DF558EE0037B478 /* UIBarButtonItem+KZPItem.m in Sources */,
 				F94BC3C61DF3D6B90037B478 /* AppDelegate.m in Sources */,
-				F9A5E92D1DF6E117004C7CE0 /* KZPADController.m in Sources */,
+				F93C5E611DF7E3E300456F97 /* KZPADController.m in Sources */,
 				F94BC44C1DF567A30037B478 /* KZPSettingController.m in Sources */,
 				F905FA501DF7285900D9EE8E /* KZPADItem.m in Sources */,
 				F94BC3FC1DF3D91D0037B478 /* KZPFriendTrendsController.m in Sources */,
