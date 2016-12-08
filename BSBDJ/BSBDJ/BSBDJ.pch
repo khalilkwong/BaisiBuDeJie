@@ -30,6 +30,8 @@
 #import "UIView+frame.h"
 #import "AFHTTPSessionManager+KZPManager.h"
 #import "NSString+KZPURL.h"
+
+#import "KZPLoginAndRegisterController.h"
 #define  ScreenW     [UIScreen mainScreen].bounds.size.width
 #define  ScreenH     [UIScreen mainScreen].bounds.size.height
 

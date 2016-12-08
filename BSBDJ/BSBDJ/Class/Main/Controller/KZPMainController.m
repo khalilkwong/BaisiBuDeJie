@@ -15,6 +15,7 @@
 #import "UIImage+Render.h"
 #import "UIColor+RandomColor.h"
 #import "KZPNavController.h"
+#import "KZPLoginView.h"
 
 @interface KZPMainController ()
 @property(nonatomic,strong)UIButton *publishBtn;
@@ -52,7 +53,7 @@
     [super viewDidLoad];
     [self setUpAllChildVC];
     [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
-    
+    self.selectedIndex = 3;
     
 }
 - (void)viewWillAppear:(BOOL)animated {

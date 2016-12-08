@@ -22,8 +22,9 @@
     //创建窗口
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     //设置根控制器
-//    KZPMainController *mainC = [[KZPMainController alloc]init];
-    KZPADController *mainC = [[KZPADController alloc]init];
+#warning release 修改回来
+    KZPMainController *mainC = [[KZPMainController alloc]init];
+//    KZPADController *mainC = [[KZPADController alloc]init];
     self.window.rootViewController = mainC;
     //显示窗口
     [self.window makeKeyAndVisible];
