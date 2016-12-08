@@ -9,8 +9,10 @@
 #import "KZPADController.h"
 #import <AFNetworking.h>
 #import <UIImageView+WebCache.h>
+#import <MJExtension.h>
 
 #import "KZPMainController.h"
+#import "KZPADItem.h"
 
 
 #define iPhone6P  ScreenH == 736
@@ -24,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *adImageV;
 @property (weak, nonatomic) IBOutlet UIButton *skipBtn;
 
+@property(nonatomic,strong) KZPADItem *adItem;
+
 @end
 
 @implementation KZPADController
@@ -31,6 +35,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //适配屏幕
+    [self screenAdjust];
+    [self downloadAD];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
+}
+
+
+#pragma mark - 屏幕适配
+- (void)screenAdjust {
     UIImage *image = nil;
     if (iPhone6P) {
         image = [UIImage imageNamed:@"LaunchImage-800-Portrait-736h@3x"];
@@ -43,7 +55,6 @@
     }
     self.launchImagV.image = image;
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -58,15 +69,51 @@
     dictM[@"code2"] = code2;
     //发送请求
     [manager GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:dictM progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        KZPLog(@"%@",responseObject);
+//        KZPLog(@"%@",responseObject);
+//        [responseObject writeToFile:@"/Users/khalil/Desktop/AD.plist" atomically:YES];
+        NSMutableArray *arrayM = responseObject[@"ad"];
+        if (!arrayM.count) {
+            return ;
+        }
+        NSDictionary *dict = arrayM[0];
+        self.adItem = [KZPADItem mj_objectWithKeyValues:dict];
+        if (!self.adItem.w) {
+            return ;
+        }
+        CGFloat h = self.adItem.h * ScreenW / self.adItem.w;
+        UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, ScreenW, h)];
+        [imageV sd_setImageWithURL:self.adItem.w_picurl.kzp_url];
+        [self.adImageV addSubview:imageV];
+        
+        
+        //添加广告点击手势
+        UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAD)];
+        [self.view addGestureRecognizer:tapGes];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         KZPLog(@"%@",error);
     }];
 }
+#pragma mark - countDown
+- (void)countDown {
+    static int count = 3;
+    count --;
+    [self.skipBtn setTitle:[NSString stringWithFormat:@"跳过 %ds",count] forState:UIControlStateNormal];
+    if (count == 0) {
+        [self skipBtnClick];
+    }
+}
+
+#pragma mark - 点击动作
 - (IBAction)skipBtnClick {
     KZPMainController *mainC = [[KZPMainController alloc]init];
     [UIApplication sharedApplication].keyWindow.rootViewController = mainC;
 
+}
+- (void)tapAD {
+    if ([[UIApplication sharedApplication] canOpenURL:self.adItem.ori_curl.kzp_url]) {
+        [[UIApplication sharedApplication] openURL:self.adItem.ori_curl.kzp_url];
+    }
 }
 
 /*

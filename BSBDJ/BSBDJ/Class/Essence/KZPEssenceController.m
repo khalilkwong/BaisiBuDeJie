@@ -18,7 +18,7 @@
     [super viewDidLoad];
     [self setUpViews];
     [self setUpNav];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor yellowColor]];
+//    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithWhite:0.5 alpha:0.1]];
     
 }
 

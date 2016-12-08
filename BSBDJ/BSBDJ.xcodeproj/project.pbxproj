@@ -38,6 +38,7 @@
 		F9D5139D1DF5D7B9003BD029 /* KZPNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */; };
 		F9D513A01DF5D974003BD029 /* KZPBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139F1DF5D974003BD029 /* KZPBackView.m */; };
 		F9D513A31DF5E129003BD029 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D513A21DF5E129003BD029 /* UIView+frame.m */; };
+		F9FAD8B81DF85178007EE404 /* NSString+KZPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAD8B71DF85178007EE404 /* NSString+KZPURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,8 @@
 		F9D5139F1DF5D974003BD029 /* KZPBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPBackView.m; sourceTree = "<group>"; };
 		F9D513A11DF5E129003BD029 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		F9D513A21DF5E129003BD029 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		F9FAD8B61DF85178007EE404 /* NSString+KZPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KZPURL.h"; sourceTree = "<group>"; };
+		F9FAD8B71DF85178007EE404 /* NSString+KZPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KZPURL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +380,8 @@
 				F94BC4441DF558EE0037B478 /* UIBarButtonItem+KZPItem.m */,
 				F905FA4B1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.h */,
 				F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */,
+				F9FAD8B61DF85178007EE404 /* NSString+KZPURL.h */,
+				F9FAD8B71DF85178007EE404 /* NSString+KZPURL.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -664,6 +669,7 @@
 				F94BC4051DF3D97C0037B478 /* KZPNewController.m in Sources */,
 				F94BC4111DF3E9AA0037B478 /* UIImage+Render.m in Sources */,
 				F94BC3F91DF3D8FE0037B478 /* KZPEssenceController.m in Sources */,
+				F9FAD8B81DF85178007EE404 /* NSString+KZPURL.m in Sources */,
 				F94BC4021DF3D95E0037B478 /* KZPMeController.m in Sources */,
 				F94BC41A1DF456A60037B478 /* KZPNavController.m in Sources */,
 				F94BC3FF1DF3D9370037B478 /* KZPPublishController.m in Sources */,

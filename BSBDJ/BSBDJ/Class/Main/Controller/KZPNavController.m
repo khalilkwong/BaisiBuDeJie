@@ -32,9 +32,13 @@
     
     
      [self setValue:[[KZPNavBar alloc]init] forKey:@"navigationBar"];
-//    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 //    <UIScreenEdgePanGestureRecognizer: 0x7fbf23f21570; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7fbf23f20940>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7fbf23f0c460>)>>
-    KZPLog(@"%@",self.interactivePopGestureRecognizer);
+    
+    
+//    KZPLog(@"%@",self.interactivePopGestureRecognizer);
+    
+    
     //如果直接设置手势的代理为 nil 那么手势就有效果了  但是  会有 bug  根控制器会卡住
 //            self.interactivePopGestureRecognizer.delegate = nil ;
     //自己设置代理
