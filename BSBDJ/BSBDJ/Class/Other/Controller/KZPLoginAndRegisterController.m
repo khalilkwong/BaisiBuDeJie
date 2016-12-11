@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIView *midV;
 
 @property (weak, nonatomic) IBOutlet UIView *quickLoginV;
+@property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 
 
 @end
@@ -24,12 +25,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     KZPLoginView *kzpLoginV = [KZPLoginView loginView];
-        kzpLoginV.frame = CGRectMake(0, 0, ScreenW, self.midV.kzp_height);
+        kzpLoginV.frame = CGRectMake(0, 0, ScreenW, kzpLoginV.kzp_height);
     [self.midV addSubview:kzpLoginV];
     
+    
+    KZPLoginView *kzpRegisterV = [KZPLoginView registerView];
+    kzpRegisterV.frame = CGRectMake(ScreenW, 0, ScreenW, kzpRegisterV.kzp_height);
+    [self.midV addSubview:kzpRegisterV];
+    
     KZPQuickLoginView *kzpQuickLoginV = [KZPQuickLoginView quickLoginView];
-    kzpQuickLoginV.frame = CGRectMake(0, 0, ScreenW, self.quickLoginV.kzp_height);
+    kzpQuickLoginV.frame = CGRectMake(0, 0, ScreenW, kzpQuickLoginV.kzp_height);
     [self.quickLoginV addSubview:kzpQuickLoginV];
+    
+  
 
     
     
@@ -55,6 +63,18 @@
 */
 - (IBAction)cancelBtnClick:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)registerBtnClick:(id)sender {
+    self.registerBtn.selected = !self.registerBtn.selected;
+
+        [UIView animateWithDuration:0.25 animations:^{
+              if (self.registerBtn.selected) {
+            self.midV.bounds = CGRectMake(ScreenW, 0, ScreenW, self.midV.kzp_height);
+              }
+              else {
+                  self.midV.bounds = CGRectMake(0, 0, ScreenW, self.midV.kzp_height);
+              }
+        }];
 }
 
 @end

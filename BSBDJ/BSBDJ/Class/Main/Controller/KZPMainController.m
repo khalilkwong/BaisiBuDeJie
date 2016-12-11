@@ -53,12 +53,15 @@
     [super viewDidLoad];
     [self setUpAllChildVC];
     [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
-    self.selectedIndex = 3;
+//    self.selectedIndex = 4;
     
 }
 - (void)viewWillAppear:(BOOL)animated {
 
     [self.tabBar addSubview:self.publishBtn];
+}
+- (void)viewDidAppear:(BOOL)animated {
+    
 }
 //-(void)addPublishBtn {
 //    UIButton *publishBtn = [[UIButton alloc]init];
@@ -99,7 +102,10 @@
     [self setUpOneChildVC:[[KZPPublishController alloc]init]  WithTitle:@"" normalImageName:@"" selectImageName:@""];
    
     [self setUpOneChildVC: [[KZPFriendTrendsController alloc]init] WithTitle:@"关注" normalImageName:@"tabBar_friendTrends_icon" selectImageName:@"tabBar_friendTrends_click_icon"];
-    [self setUpOneChildVC: [[KZPMeController alloc]init] WithTitle:@"我的" normalImageName:@"tabBar_me_icon" selectImageName:@"tabBar_me_click_icon"];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"KZPMeController" bundle:nil];
+   KZPMeController *vc =  [sb instantiateViewControllerWithIdentifier:@"KZPMeController"];
+    [self setUpOneChildVC: vc WithTitle:@"我的" normalImageName:@"tabBar_me_icon" selectImageName:@"tabBar_me_click_icon"];
 }
 
 #pragma mark - addBtnClick

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1CA8ACEFAD6F9C9503F99BC3 /* libPods-BSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */; };
+		F903DDD41DFBA53300E1E58D /* KZPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F903DDD31DFBA53300E1E58D /* KZPTextField.m */; };
+		F903DDD81DFC19E800E1E58D /* KZPMeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F903DDD71DFC19E800E1E58D /* KZPMeController.storyboard */; };
+		F903DDDB1DFC1B9800E1E58D /* KZPMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F903DDDA1DFC1B9800E1E58D /* KZPMeController.m */; };
 		F905FA4D1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */; };
 		F905FA501DF7285900D9EE8E /* KZPADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F905FA4F1DF7285900D9EE8E /* KZPADItem.m */; };
 		F93C5E611DF7E3E300456F97 /* KZPADController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93C5E601DF7E3E300456F97 /* KZPADController.m */; };
@@ -18,7 +21,6 @@
 		F94BC3F91DF3D8FE0037B478 /* KZPEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3F81DF3D8FE0037B478 /* KZPEssenceController.m */; };
 		F94BC3FC1DF3D91D0037B478 /* KZPFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3FB1DF3D91D0037B478 /* KZPFriendTrendsController.m */; };
 		F94BC3FF1DF3D9370037B478 /* KZPPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3FE1DF3D9370037B478 /* KZPPublishController.m */; };
-		F94BC4021DF3D95E0037B478 /* KZPMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC4011DF3D95E0037B478 /* KZPMeController.m */; };
 		F94BC4051DF3D97C0037B478 /* KZPNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC4041DF3D97C0037B478 /* KZPNewController.m */; };
 		F94BC40C1DF3E5EA0037B478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94BC40A1DF3E5EA0037B478 /* LaunchScreen.storyboard */; };
 		F94BC40E1DF3E7440037B478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94BC40D1DF3E7440037B478 /* Assets.xcassets */; };
@@ -30,6 +32,12 @@
 		F95193C81DF9833300229721 /* KZPQuickLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F95193C71DF9833300229721 /* KZPQuickLoginView.m */; };
 		F95193CA1DF9834100229721 /* KZPQuickLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95193C91DF9834100229721 /* KZPQuickLoginView.xib */; };
 		F95193CD1DF9880C00229721 /* KZPLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F95193CC1DF9880C00229721 /* KZPLoginBtn.m */; };
+		F95193D11DFB0C5900229721 /* KZPFollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95193CF1DFB0C5900229721 /* KZPFollowController.m */; };
+		F970A0F51DFC318900ED5C88 /* KZPMeItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F970A0F31DFC318900ED5C88 /* KZPMeItemCell.m */; };
+		F970A0F61DFC318900ED5C88 /* KZPMeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F970A0F41DFC318900ED5C88 /* KZPMeItemCell.xib */; };
+		F970A0F91DFC358500ED5C88 /* KZPMeSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F970A0F81DFC358500ED5C88 /* KZPMeSquareItem.m */; };
+		F970A1031DFC46B500ED5C88 /* KZPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F970A1011DFC46B500ED5C88 /* KZPWebViewController.m */; };
+		F970A1041DFC46B500ED5C88 /* KZPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F970A1021DFC46B500ED5C88 /* KZPWebViewController.xib */; };
 		F9A5E9231DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E91C1DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png */; };
 		F9A5E9241DF6E0DA004C7CE0 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E91D1DF6E0DA004C7CE0 /* LaunchImage-700-568h@2x.png */; };
 		F9A5E9251DF6E0DA004C7CE0 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E91E1DF6E0DA004C7CE0 /* LaunchImage-700@2x.png */; };
@@ -47,12 +55,21 @@
 		F9FAD8BF1DF943FF007EE404 /* KZPLoginAndRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FAD8BD1DF943FE007EE404 /* KZPLoginAndRegisterController.xib */; };
 		F9FAD8C21DF95071007EE404 /* KZPLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAD8C11DF95071007EE404 /* KZPLoginView.m */; };
 		F9FAD8C41DF95081007EE404 /* KZPLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FAD8C31DF95081007EE404 /* KZPLoginView.xib */; };
+		F9FF2ACE1DFB103C00E3C4CC /* KZPFollowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FF2ACD1DFB103C00E3C4CC /* KZPFollowItem.m */; };
+		F9FF2AD21DFB12F800E3C4CC /* KZPFollowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FF2AD01DFB12F800E3C4CC /* KZPFollowCell.m */; };
+		F9FF2AD31DFB12F800E3C4CC /* KZPFollowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FF2AD11DFB12F800E3C4CC /* KZPFollowCell.xib */; };
+		F9FF2AD61DFB199600E3C4CC /* UIImage+imageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FF2AD51DFB199600E3C4CC /* UIImage+imageExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BSBDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D731AE744B43470C5DDB6C /* Pods-BSBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.release.xcconfig"; sourceTree = "<group>"; };
 		F08513D13DB38449D587F446 /* Pods-BSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		F903DDD21DFBA53300E1E58D /* KZPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPTextField.h; path = BSBDJ/Class/New/Controller/KZPTextField.h; sourceTree = SOURCE_ROOT; };
+		F903DDD31DFBA53300E1E58D /* KZPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPTextField.m; path = BSBDJ/Class/New/Controller/KZPTextField.m; sourceTree = SOURCE_ROOT; };
+		F903DDD71DFC19E800E1E58D /* KZPMeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KZPMeController.storyboard; sourceTree = "<group>"; };
+		F903DDD91DFC1B9800E1E58D /* KZPMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPMeController.h; sourceTree = "<group>"; };
+		F903DDDA1DFC1B9800E1E58D /* KZPMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPMeController.m; sourceTree = "<group>"; };
 		F905FA4B1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+KZPManager.h"; sourceTree = "<group>"; };
 		F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+KZPManager.m"; sourceTree = "<group>"; };
 		F905FA4E1DF7285900D9EE8E /* KZPADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPADItem.h; sourceTree = "<group>"; };
@@ -73,8 +90,6 @@
 		F94BC3FB1DF3D91D0037B478 /* KZPFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPFriendTrendsController.m; sourceTree = "<group>"; };
 		F94BC3FD1DF3D9370037B478 /* KZPPublishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPPublishController.h; sourceTree = "<group>"; };
 		F94BC3FE1DF3D9370037B478 /* KZPPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPPublishController.m; sourceTree = "<group>"; };
-		F94BC4001DF3D95E0037B478 /* KZPMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPMeController.h; sourceTree = "<group>"; };
-		F94BC4011DF3D95E0037B478 /* KZPMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPMeController.m; sourceTree = "<group>"; };
 		F94BC4031DF3D97C0037B478 /* KZPNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPNewController.h; sourceTree = "<group>"; };
 		F94BC4041DF3D97C0037B478 /* KZPNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPNewController.m; sourceTree = "<group>"; };
 		F94BC40B1DF3E5EA0037B478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +110,16 @@
 		F95193C91DF9834100229721 /* KZPQuickLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KZPQuickLoginView.xib; path = BSBDJ/Class/Other/Controller/KZPQuickLoginView.xib; sourceTree = SOURCE_ROOT; };
 		F95193CB1DF9880C00229721 /* KZPLoginBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPLoginBtn.h; path = BSBDJ/Class/Other/Controller/KZPLoginBtn.h; sourceTree = SOURCE_ROOT; };
 		F95193CC1DF9880C00229721 /* KZPLoginBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPLoginBtn.m; path = BSBDJ/Class/Other/Controller/KZPLoginBtn.m; sourceTree = SOURCE_ROOT; };
+		F95193CE1DFB0C5900229721 /* KZPFollowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPFollowController.h; sourceTree = "<group>"; };
+		F95193CF1DFB0C5900229721 /* KZPFollowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPFollowController.m; sourceTree = "<group>"; };
+		F970A0F21DFC318900ED5C88 /* KZPMeItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMeItemCell.h; path = BSBDJ/Class/Me/Controller/KZPMeItemCell.h; sourceTree = SOURCE_ROOT; };
+		F970A0F31DFC318900ED5C88 /* KZPMeItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMeItemCell.m; path = BSBDJ/Class/Me/Controller/KZPMeItemCell.m; sourceTree = SOURCE_ROOT; };
+		F970A0F41DFC318900ED5C88 /* KZPMeItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KZPMeItemCell.xib; path = BSBDJ/Class/Me/Controller/KZPMeItemCell.xib; sourceTree = SOURCE_ROOT; };
+		F970A0F71DFC358500ED5C88 /* KZPMeSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMeSquareItem.h; path = BSBDJ/Class/Me/Controller/KZPMeSquareItem.h; sourceTree = SOURCE_ROOT; };
+		F970A0F81DFC358500ED5C88 /* KZPMeSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMeSquareItem.m; path = BSBDJ/Class/Me/Controller/KZPMeSquareItem.m; sourceTree = SOURCE_ROOT; };
+		F970A1001DFC46B500ED5C88 /* KZPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPWebViewController.h; sourceTree = "<group>"; };
+		F970A1011DFC46B500ED5C88 /* KZPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPWebViewController.m; sourceTree = "<group>"; };
+		F970A1021DFC46B500ED5C88 /* KZPWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KZPWebViewController.xib; sourceTree = "<group>"; };
 		F9A5E91C1DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		F9A5E91D1DF6E0DA004C7CE0 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		F9A5E91E1DF6E0DA004C7CE0 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -118,6 +143,13 @@
 		F9FAD8C01DF95071007EE404 /* KZPLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPLoginView.h; path = BSBDJ/Class/Other/Controller/KZPLoginView.h; sourceTree = SOURCE_ROOT; };
 		F9FAD8C11DF95071007EE404 /* KZPLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPLoginView.m; path = BSBDJ/Class/Other/Controller/KZPLoginView.m; sourceTree = SOURCE_ROOT; };
 		F9FAD8C31DF95081007EE404 /* KZPLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KZPLoginView.xib; path = BSBDJ/Class/Other/Controller/KZPLoginView.xib; sourceTree = SOURCE_ROOT; };
+		F9FF2ACC1DFB103C00E3C4CC /* KZPFollowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPFollowItem.h; path = BSBDJ/Class/New/Controller/KZPFollowItem.h; sourceTree = SOURCE_ROOT; };
+		F9FF2ACD1DFB103C00E3C4CC /* KZPFollowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPFollowItem.m; path = BSBDJ/Class/New/Controller/KZPFollowItem.m; sourceTree = SOURCE_ROOT; };
+		F9FF2ACF1DFB12F800E3C4CC /* KZPFollowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPFollowCell.h; path = BSBDJ/Class/New/Controller/KZPFollowCell.h; sourceTree = SOURCE_ROOT; };
+		F9FF2AD01DFB12F800E3C4CC /* KZPFollowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPFollowCell.m; path = BSBDJ/Class/New/Controller/KZPFollowCell.m; sourceTree = SOURCE_ROOT; };
+		F9FF2AD11DFB12F800E3C4CC /* KZPFollowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KZPFollowCell.xib; path = BSBDJ/Class/New/Controller/KZPFollowCell.xib; sourceTree = SOURCE_ROOT; };
+		F9FF2AD41DFB199600E3C4CC /* UIImage+imageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageExtension.h"; sourceTree = "<group>"; };
+		F9FF2AD51DFB199600E3C4CC /* UIImage+imageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,8 +355,12 @@
 		F94BC3E61DF3D85F0037B478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F94BC4001DF3D95E0037B478 /* KZPMeController.h */,
-				F94BC4011DF3D95E0037B478 /* KZPMeController.m */,
+				F903DDD91DFC1B9800E1E58D /* KZPMeController.h */,
+				F903DDDA1DFC1B9800E1E58D /* KZPMeController.m */,
+				F903DDD71DFC19E800E1E58D /* KZPMeController.storyboard */,
+				F970A1001DFC46B500ED5C88 /* KZPWebViewController.h */,
+				F970A1011DFC46B500ED5C88 /* KZPWebViewController.m */,
+				F970A1021DFC46B500ED5C88 /* KZPWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,6 +368,8 @@
 		F94BC3E71DF3D85F0037B478 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F970A0F71DFC358500ED5C88 /* KZPMeSquareItem.h */,
+				F970A0F81DFC358500ED5C88 /* KZPMeSquareItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,6 +377,9 @@
 		F94BC3E81DF3D85F0037B478 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F970A0F21DFC318900ED5C88 /* KZPMeItemCell.h */,
+				F970A0F31DFC318900ED5C88 /* KZPMeItemCell.m */,
+				F970A0F41DFC318900ED5C88 /* KZPMeItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,6 +399,8 @@
 			children = (
 				F94BC4031DF3D97C0037B478 /* KZPNewController.h */,
 				F94BC4041DF3D97C0037B478 /* KZPNewController.m */,
+				F95193CE1DFB0C5900229721 /* KZPFollowController.h */,
+				F95193CF1DFB0C5900229721 /* KZPFollowController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -365,6 +408,8 @@
 		F94BC3EB1DF3D85F0037B478 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9FF2ACC1DFB103C00E3C4CC /* KZPFollowItem.h */,
+				F9FF2ACD1DFB103C00E3C4CC /* KZPFollowItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +417,9 @@
 		F94BC3EC1DF3D85F0037B478 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F9FF2ACF1DFB12F800E3C4CC /* KZPFollowCell.h */,
+				F9FF2AD01DFB12F800E3C4CC /* KZPFollowCell.m */,
+				F9FF2AD11DFB12F800E3C4CC /* KZPFollowCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -391,6 +439,8 @@
 		F94BC3EE1DF3D85F0037B478 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F9FF2AD41DFB199600E3C4CC /* UIImage+imageExtension.h */,
+				F9FF2AD51DFB199600E3C4CC /* UIImage+imageExtension.m */,
 				F9D513A11DF5E129003BD029 /* UIView+frame.h */,
 				F9D513A21DF5E129003BD029 /* UIView+frame.m */,
 				F94BC40F1DF3E9AA0037B478 /* UIImage+Render.h */,
@@ -562,6 +612,8 @@
 				F95193C91DF9834100229721 /* KZPQuickLoginView.xib */,
 				F95193CB1DF9880C00229721 /* KZPLoginBtn.h */,
 				F95193CC1DF9880C00229721 /* KZPLoginBtn.m */,
+				F903DDD21DFBA53300E1E58D /* KZPTextField.h */,
+				F903DDD31DFBA53300E1E58D /* KZPTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -631,17 +683,21 @@
 			files = (
 				F94BC40C1DF3E5EA0037B478 /* LaunchScreen.storyboard in Resources */,
 				F9A5E9241DF6E0DA004C7CE0 /* LaunchImage-700-568h@2x.png in Resources */,
+				F970A1041DFC46B500ED5C88 /* KZPWebViewController.xib in Resources */,
 				F9A5E92E1DF6E117004C7CE0 /* KZPADController.xib in Resources */,
 				F9FAD8BF1DF943FF007EE404 /* KZPLoginAndRegisterController.xib in Resources */,
 				F9FAD8BA1DF93E69007EE404 /* KZPFriendTrendsController.xib in Resources */,
 				F9A5E9281DF6E0DA004C7CE0 /* LaunchImage.png in Resources */,
+				F970A0F61DFC318900ED5C88 /* KZPMeItemCell.xib in Resources */,
 				F94BC40E1DF3E7440037B478 /* Assets.xcassets in Resources */,
 				F95193CA1DF9834100229721 /* KZPQuickLoginView.xib in Resources */,
 				F9A5E9251DF6E0DA004C7CE0 /* LaunchImage-700@2x.png in Resources */,
 				F9FAD8C41DF95081007EE404 /* KZPLoginView.xib in Resources */,
+				F9FF2AD31DFB12F800E3C4CC /* KZPFollowCell.xib in Resources */,
 				F9A5E9271DF6E0DA004C7CE0 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				F9A5E9231DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png in Resources */,
 				F9A5E9261DF6E0DA004C7CE0 /* LaunchImage-800-667h@2x.png in Resources */,
+				F903DDD81DFC19E800E1E58D /* KZPMeController.storyboard in Resources */,
 				F94BC3CC1DF3D6B90037B478 /* Main.storyboard in Resources */,
 				F9A5E9291DF6E0DA004C7CE0 /* LaunchImage@2x.png in Resources */,
 			);
@@ -705,25 +761,33 @@
 				F94BC4051DF3D97C0037B478 /* KZPNewController.m in Sources */,
 				F94BC4111DF3E9AA0037B478 /* UIImage+Render.m in Sources */,
 				F94BC3F91DF3D8FE0037B478 /* KZPEssenceController.m in Sources */,
+				F970A1031DFC46B500ED5C88 /* KZPWebViewController.m in Sources */,
 				F9FAD8B81DF85178007EE404 /* NSString+KZPURL.m in Sources */,
-				F94BC4021DF3D95E0037B478 /* KZPMeController.m in Sources */,
+				F95193D11DFB0C5900229721 /* KZPFollowController.m in Sources */,
 				F94BC41A1DF456A60037B478 /* KZPNavController.m in Sources */,
 				F9FAD8C21DF95071007EE404 /* KZPLoginView.m in Sources */,
 				F94BC3FF1DF3D9370037B478 /* KZPPublishController.m in Sources */,
 				F9D513A01DF5D974003BD029 /* KZPBackView.m in Sources */,
 				F94BC3F61DF3D8D10037B478 /* KZPMainController.m in Sources */,
+				F970A0F91DFC358500ED5C88 /* KZPMeSquareItem.m in Sources */,
 				F95193CD1DF9880C00229721 /* KZPLoginBtn.m in Sources */,
 				F9D513A31DF5E129003BD029 /* UIView+frame.m in Sources */,
+				F903DDDB1DFC1B9800E1E58D /* KZPMeController.m in Sources */,
 				F94BC4171DF44B040037B478 /* UIColor+RandomColor.m in Sources */,
 				F94BC4451DF558EE0037B478 /* UIBarButtonItem+KZPItem.m in Sources */,
+				F9FF2AD61DFB199600E3C4CC /* UIImage+imageExtension.m in Sources */,
 				F95193C81DF9833300229721 /* KZPQuickLoginView.m in Sources */,
 				F94BC3C61DF3D6B90037B478 /* AppDelegate.m in Sources */,
 				F93C5E611DF7E3E300456F97 /* KZPADController.m in Sources */,
 				F94BC44C1DF567A30037B478 /* KZPSettingController.m in Sources */,
+				F903DDD41DFBA53300E1E58D /* KZPTextField.m in Sources */,
 				F905FA501DF7285900D9EE8E /* KZPADItem.m in Sources */,
 				F94BC3FC1DF3D91D0037B478 /* KZPFriendTrendsController.m in Sources */,
 				F94BC3C31DF3D6B90037B478 /* main.m in Sources */,
+				F970A0F51DFC318900ED5C88 /* KZPMeItemCell.m in Sources */,
+				F9FF2AD21DFB12F800E3C4CC /* KZPFollowCell.m in Sources */,
 				F9FAD8BE1DF943FF007EE404 /* KZPLoginAndRegisterController.m in Sources */,
+				F9FF2ACE1DFB103C00E3C4CC /* KZPFollowItem.m in Sources */,
 				F9D5139D1DF5D7B9003BD029 /* KZPNavBar.m in Sources */,
 				F905FA4D1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m in Sources */,
 			);
@@ -850,7 +914,9 @@
 				DEVELOPMENT_TEAM = C2QY9Q2TP8;
 				GCC_PREFIX_HEADER = BSBDJ/BSBDJ.pch;
 				INFOPLIST_FILE = BSBDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khalil.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -865,7 +931,9 @@
 				DEVELOPMENT_TEAM = C2QY9Q2TP8;
 				GCC_PREFIX_HEADER = BSBDJ/BSBDJ.pch;
 				INFOPLIST_FILE = BSBDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khalil.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

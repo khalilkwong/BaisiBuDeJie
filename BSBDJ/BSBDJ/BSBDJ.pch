@@ -28,10 +28,14 @@
 #import "UIBarButtonItem+KZPItem.h"
 #import "KZPBackView.h"
 #import "UIView+frame.h"
+#import <AFNetworking.h>
+#import <AFURLSessionManager.h>
 #import "AFHTTPSessionManager+KZPManager.h"
 #import "NSString+KZPURL.h"
-
+#import "UIImage+imageExtension.h"
 #import "KZPLoginAndRegisterController.h"
+#import <UIKit/UIKit.h>
+
 #define  ScreenW     [UIScreen mainScreen].bounds.size.width
 #define  ScreenH     [UIScreen mainScreen].bounds.size.height
 

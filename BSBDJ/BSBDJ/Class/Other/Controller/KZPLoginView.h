@@ -10,4 +10,5 @@
 
 @interface KZPLoginView : UIView
 + (instancetype)loginView;
++ (instancetype)registerView;
 @end

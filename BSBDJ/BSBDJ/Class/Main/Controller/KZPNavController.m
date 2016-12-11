@@ -57,6 +57,7 @@
     if (self.childViewControllers.count > 0) {
 
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[KZPBackView viewWithTarget:self action:@selector(back)]];
+        self.tabBarController.tabBar.hidden = YES;
     }
     [super pushViewController:viewController animated:animated];
     

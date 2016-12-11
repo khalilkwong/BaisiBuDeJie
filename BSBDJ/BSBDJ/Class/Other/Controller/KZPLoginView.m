@@ -23,24 +23,30 @@
     return [[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil].firstObject;
 }
 
-- (IBAction)phoneTFClick:(id)sender {
++ (instancetype)registerView {
+    return [[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
+}
 
-
-    [self.phoneTF setValue:[UIColor redColor] forKeyPath:@"placeholderLabel.textColor"];
-}
-- (IBAction)phoneTFEndEdit:(id)sender {
-    [self.phoneTF setValue:[UIColor colorWithWhite:0.7 alpha:1] forKeyPath:@"placeholderLabel.textColor"];
-}
-- (IBAction)pwdTFClick:(id)sender {
-   [self.pwdTF setValue:[UIColor redColor] forKeyPath:@"placeholderLabel.textColor"];
-}
-- (IBAction)pwdTFEndEdit:(id)sender {
-    [self.pwdTF setValue:[UIColor colorWithWhite:0.7 alpha:1] forKeyPath:@"placeholderLabel.textColor"];
-}
+//- (IBAction)phoneTFClick:(id)sender {
+//
+//
+//    [self.phoneTF setValue:[UIColor redColor] forKeyPath:@"placeholderLabel.textColor"];
+//    self.phoneTF.tintColor = [UIColor redColor];
+//}
+//- (IBAction)phoneTFEndEdit:(id)sender {
+//    [self.phoneTF setValue:[UIColor colorWithWhite:0.7 alpha:1] forKeyPath:@"placeholderLabel.textColor"];
+//}
+//- (IBAction)pwdTFClick:(id)sender {
+//   [self.pwdTF setValue:[UIColor redColor] forKeyPath:@"placeholderLabel.textColor"];
+//       self.phoneTF.tintColor = [UIColor redColor];
+//}
+//- (IBAction)pwdTFEndEdit:(id)sender {
+//    [self.pwdTF setValue:[UIColor colorWithWhite:0.7 alpha:1] forKeyPath:@"placeholderLabel.textColor"];
+//}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    KZPLog(@"%@",self.pwdTF.placeholder);
+//    KZPLog(@"%@",self.pwdTF.placeholder);
     
     
     UIImage* image = [self.loginBtn backgroundImageForState:UIControlStateNormal];

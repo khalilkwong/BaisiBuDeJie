@@ -7,6 +7,7 @@
 //
 
 #import "KZPNewController.h"
+#import "KZPFollowController.h"
 
 @interface KZPNewController ()
 
@@ -39,6 +40,7 @@
     
 }
 - (void)mainTagBtnClick {
-    
+
+    [self.navigationController pushViewController:[[KZPFollowController alloc]init] animated:YES];
 }
 @end

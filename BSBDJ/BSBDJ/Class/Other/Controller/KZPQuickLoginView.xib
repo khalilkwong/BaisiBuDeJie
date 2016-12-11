@@ -5,18 +5,17 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KZPQuickLoginView">
-            <rect key="frame" x="0.0" y="0.0" width="496" height="293"/>
+            <rect key="frame" x="0.0" y="0.0" width="506" height="202"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_left_line" translatesAutoresizingMaskIntoConstraints="NO" id="mTm-TL-Gvm">
-                    <rect key="frame" x="58" y="35" width="130" height="1"/>
+                    <rect key="frame" x="63" y="35" width="130" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="4hR-QK-5fX"/>
                         <constraint firstAttribute="width" constant="130" id="D9S-tn-RWF"/>
@@ -25,20 +24,23 @@
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_right_line" translatesAutoresizingMaskIntoConstraints="NO" id="XUA-Cr-kDG">
-                    <rect key="frame" x="308" y="34.5" width="130" height="1"/>
+                    <rect key="frame" x="313" y="34.5" width="130" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="6Pf-e1-mv6"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="lJi-ur-RoT"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aew-3i-PBX" customClass="KZPLoginBtn">
-                    <rect key="frame" x="24.5" y="70" width="149" height="203"/>
+                    <rect key="frame" x="0.0" y="82" width="168.5" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="zSC-ed-rE2"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="QQ登录" image="login_QQ_icon"/>
                     <state key="highlighted" title="QQ登录" image="login_QQ_icon_click"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fw9-VY-Riy" customClass="KZPLoginBtn">
-                    <rect key="frame" x="173.5" y="70" width="149" height="203"/>
+                    <rect key="frame" x="168.5" y="82" width="169" height="120"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="n3d-I1-O4p"/>
                     </constraints>
@@ -52,13 +54,13 @@
                     </variation>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcU-T2-vXu" customClass="KZPLoginBtn">
-                    <rect key="frame" x="322.5" y="70" width="149" height="203"/>
+                    <rect key="frame" x="337.5" y="82" width="168.5" height="120"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="腾讯微博登录" image="login_tecent_icon"/>
                     <state key="highlighted" title="腾讯微博登录" image="login_tecent_icon_click"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPZ-io-wVY">
-                    <rect key="frame" x="198" y="20" width="100" height="30"/>
+                    <rect key="frame" x="203" y="20" width="100" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="39s-55-MU7"/>
                         <constraint firstAttribute="height" constant="30" id="8jl-Gj-Afa"/>
@@ -71,27 +73,29 @@
                 </label>
             </subviews>
             <constraints>
-                <constraint firstItem="GcU-T2-vXu" firstAttribute="width" secondItem="Fw9-VY-Riy" secondAttribute="width" id="0Qf-Mo-UUr"/>
-                <constraint firstItem="GcU-T2-vXu" firstAttribute="height" secondItem="Fw9-VY-Riy" secondAttribute="height" id="3bd-5E-K3p"/>
+                <constraint firstItem="aew-3i-PBX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4hm-xh-mlt"/>
+                <constraint firstItem="Fw9-VY-Riy" firstAttribute="leading" secondItem="aew-3i-PBX" secondAttribute="trailing" id="4je-ts-jTZ"/>
+                <constraint firstAttribute="bottom" secondItem="Fw9-VY-Riy" secondAttribute="bottom" id="4yO-aj-3tG"/>
                 <constraint firstItem="BPZ-io-wVY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5be-Sq-nqB"/>
                 <constraint firstItem="XUA-Cr-kDG" firstAttribute="leading" secondItem="BPZ-io-wVY" secondAttribute="trailing" constant="10" id="5cP-nU-wbW"/>
+                <constraint firstItem="GcU-T2-vXu" firstAttribute="height" secondItem="aew-3i-PBX" secondAttribute="height" id="93C-ps-BZF"/>
+                <constraint firstItem="Fw9-VY-Riy" firstAttribute="width" secondItem="aew-3i-PBX" secondAttribute="width" id="9pu-y4-bz7"/>
+                <constraint firstItem="GcU-T2-vXu" firstAttribute="width" secondItem="aew-3i-PBX" secondAttribute="width" id="Bc6-NB-Y2m"/>
                 <constraint firstItem="BPZ-io-wVY" firstAttribute="centerY" secondItem="mTm-TL-Gvm" secondAttribute="centerY" id="HXb-Cc-9WX"/>
-                <constraint firstItem="Fw9-VY-Riy" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.3" id="Ija-hw-X2p"/>
-                <constraint firstAttribute="bottom" secondItem="Fw9-VY-Riy" secondAttribute="bottom" constant="20" id="KEq-fC-tQH"/>
                 <constraint firstItem="XUA-Cr-kDG" firstAttribute="centerY" secondItem="mTm-TL-Gvm" secondAttribute="centerY" id="MfM-9J-UhW"/>
                 <constraint firstItem="BPZ-io-wVY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="S3S-Ht-ZVs"/>
-                <constraint firstItem="Fw9-VY-Riy" firstAttribute="leading" secondItem="aew-3i-PBX" secondAttribute="trailing" id="ZCd-gH-6wL"/>
+                <constraint firstAttribute="trailing" secondItem="GcU-T2-vXu" secondAttribute="trailing" id="TxS-G0-PUR"/>
+                <constraint firstAttribute="bottom" secondItem="GcU-T2-vXu" secondAttribute="bottom" id="VIB-RM-qTH"/>
                 <constraint firstItem="BPZ-io-wVY" firstAttribute="leading" secondItem="mTm-TL-Gvm" secondAttribute="trailing" constant="10" id="a80-DV-HXv"/>
-                <constraint firstItem="Fw9-VY-Riy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ehF-Oe-yiU"/>
-                <constraint firstItem="Fw9-VY-Riy" firstAttribute="top" secondItem="BPZ-io-wVY" secondAttribute="bottom" constant="20" id="fLD-Zf-bBW"/>
-                <constraint firstItem="GcU-T2-vXu" firstAttribute="top" secondItem="Fw9-VY-Riy" secondAttribute="top" id="jb3-sv-PS8"/>
-                <constraint firstItem="GcU-T2-vXu" firstAttribute="leading" secondItem="Fw9-VY-Riy" secondAttribute="trailing" id="kuF-mZ-OVC"/>
+                <constraint firstItem="Fw9-VY-Riy" firstAttribute="height" secondItem="aew-3i-PBX" secondAttribute="height" id="b9F-2b-CME"/>
+                <constraint firstItem="GcU-T2-vXu" firstAttribute="centerY" secondItem="aew-3i-PBX" secondAttribute="centerY" id="kL6-1U-KuZ"/>
+                <constraint firstItem="GcU-T2-vXu" firstAttribute="leading" secondItem="Fw9-VY-Riy" secondAttribute="trailing" id="l9k-sA-fMt"/>
                 <constraint firstItem="aew-3i-PBX" firstAttribute="width" secondItem="Fw9-VY-Riy" secondAttribute="width" id="lqw-0l-6z5"/>
-                <constraint firstItem="aew-3i-PBX" firstAttribute="height" secondItem="Fw9-VY-Riy" secondAttribute="height" id="mM0-1o-udd"/>
-                <constraint firstItem="aew-3i-PBX" firstAttribute="top" secondItem="Fw9-VY-Riy" secondAttribute="top" id="vd7-Np-7as"/>
+                <constraint firstItem="Fw9-VY-Riy" firstAttribute="centerY" secondItem="aew-3i-PBX" secondAttribute="centerY" id="qZp-f9-PLX"/>
+                <constraint firstAttribute="bottom" secondItem="aew-3i-PBX" secondAttribute="bottom" id="x9x-V2-zUe"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="55" y="-42.5"/>
+            <point key="canvasLocation" x="54" y="-181"/>
         </view>
     </objects>
     <resources>

@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="midV" destination="TVE-Ft-8xb" id="cov-0B-o1d"/>
                 <outlet property="quickLoginV" destination="ugo-Le-lHW" id="ckh-DW-vco"/>
+                <outlet property="registerBtn" destination="a5l-ws-sVw" id="hn1-Yv-cXb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="JLE-KK-2sA"/>
             </connections>
         </placeholder>
@@ -33,6 +34,10 @@
                             <state key="normal" title="注册账号">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <state key="selected" title="登录"/>
+                            <connections>
+                                <action selector="registerBtnClick:" destination="-1" eventType="touchUpInside" id="iuA-gr-O6y"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vss-pd-rIk">
                             <rect key="frame" x="20" y="11" width="16" height="22"/>
@@ -73,14 +78,13 @@
                 <constraint firstItem="YrO-TN-nfM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ldl-Sg-9jd"/>
                 <constraint firstAttribute="trailing" secondItem="TVE-Ft-8xb" secondAttribute="trailing" id="MPe-ld-f0B"/>
                 <constraint firstItem="TVE-Ft-8xb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zk4-Gy-1z1"/>
-                <constraint firstItem="TVE-Ft-8xb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aeK-Rf-Fuz"/>
                 <constraint firstAttribute="bottom" secondItem="ugo-Le-lHW" secondAttribute="bottom" constant="10" id="fzT-wV-kJ9"/>
                 <constraint firstItem="ugo-Le-lHW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gWl-Zq-Erx"/>
                 <constraint firstAttribute="bottom" secondItem="YrO-TN-nfM" secondAttribute="bottom" id="hLR-ao-Whj"/>
                 <constraint firstAttribute="trailing" secondItem="hjR-k7-qEJ" secondAttribute="trailing" id="lbf-HN-YuH"/>
                 <constraint firstItem="hjR-k7-qEJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zXS-Pt-OwV"/>
             </constraints>
-            <point key="canvasLocation" x="-1212" y="-118"/>
+            <point key="canvasLocation" x="-1255" y="-61.5"/>
         </view>
     </objects>
     <resources>
