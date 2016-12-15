@@ -8,28 +8,53 @@
 
 #import "KZPEssenceController.h"
 
-@interface KZPEssenceController ()
 
+@interface KZPEssenceController ()
+@property(nonatomic,weak)UIView *titleView ;
 @end
 
 @implementation KZPEssenceController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpViews];
+    
     [self setUpNav];
-//    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithWhite:0.5 alpha:0.1]];
+    [self setUpScrollView];
+    [self setUptitlesView];
+    [self addTitleBtn];
+
     
 }
 
--(void)setUpViews {
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 375, 44)];
-    view.backgroundColor = [UIColor blueColor];
+-(void)setUptitlesView {
+    UIView *titleView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 375, 44)];
+    titleView.backgroundColor = [UIColor clearColor];
+    self.titleView = titleView;
+     [self.view addSubview:titleView];
+   }
+
+- (void)addTitleBtn {
+    NSInteger count = 5;
+    CGFloat BtnW = ScreenW / count;
+    CGFloat BtnH = self.titleView.kzp_height;
     
-    UITableView *tableV = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, 375, 603)];
-    [self.view addSubview:tableV];
-    [self.view addSubview:view];
+    for (int i = 0; i < count; i ++) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(i * BtnW, 0, BtnW, BtnH);
+        btn.backgroundColor = [UIColor randomColor];
+        btn.tag = i;
+        [self.titleView addSubview:btn];
+    }
 }
+
+
+- (void)addChildVCs {
+    
+}
+    
+   
+
+
 - (void)setUpNav {
     //设置左边 barButtonItem
     //如果直接用 btn 来包装 barBtnItem  超过 btn 的部分  btn 也会响应
@@ -45,7 +70,12 @@
   
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"navigationButtonRandomN" hightlightedImageName:@"navigationButtonRandomClickN" andAddTarget:self action:@selector(randomBtnClick) forControlEvents:UIControlEventTouchUpInside];
 }
-
+- (void)setUpScrollView {
+    UIScrollView *scrollV = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH)];
+    scrollV.contentInset = UIEdgeInsetsMake(64 + _titleView.kzp_height,0 , 0, 0);
+    scrollV.backgroundColor = [UIColor randomColor];
+    [self.view addSubview:scrollV];
+}
 
 
 #pragma mark - 导航栏按键点击方法

@@ -10,4 +10,5 @@
 
 @interface KZPWebViewController : UIViewController
 @property(nonatomic,strong)NSString *url;
+@property(nonatomic,strong)NSString *titleText;
 @end

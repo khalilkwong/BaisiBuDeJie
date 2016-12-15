@@ -7,7 +7,7 @@
 //
 
 #import "KZPTextField.h"
-
+#import "UITextField+KZPPlaceHolderColor.h"
 @implementation KZPTextField
 
 /*
@@ -20,18 +20,18 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.tintColor = [UIColor whiteColor];
-    [self setValue:[UIColor colorWithWhite:0.7 alpha:1] forKeyPath:@"placeholderLabel.textColor"];
+    self.placeholderColor = [UIColor grayColor];
 }
 
 - (BOOL)becomeFirstResponder {
  
-    [self setValue:[UIColor whiteColor] forKeyPath:@"placeholderLabel.textColor"];
+    self.placeholderColor = [UIColor whiteColor];
     
     return    [super becomeFirstResponder];
 }
 
 - (BOOL)resignFirstResponder {
-    [self setValue:[UIColor colorWithWhite:0.7 alpha:1] forKeyPath:@"placeholderLabel.textColor"];
+    self.placeholderColor = [UIColor grayColor];
       return    [super resignFirstResponder];
 }
 

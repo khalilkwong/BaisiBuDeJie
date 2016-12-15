@@ -7,8 +7,11 @@
 //
 
 #import "KZPSettingController.h"
-
+#import "KZPFileManager.h"
+#import "KZPClearCacheCell.h"
+static NSString * const ID = @"Cell";
 @interface KZPSettingController ()
+@property(nonatomic,assign) NSUInteger size;
 
 @end
 
@@ -18,6 +21,7 @@
     [super viewDidLoad];
     
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[KZPBackView view]];
+    [self.tableView registerClass:[KZPClearCacheCell class] forCellReuseIdentifier:ID];
 }
 - (void)viewWillAppear:(BOOL)animated {
     
@@ -27,28 +31,66 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - 缓存字符串
+//缓存字符串
+-(NSString*)getCacheStr{
+    
+    //缓存尺寸
+    //1MB=1000KB=1000*1000B
+    //1KB =1000B
+    NSString*  cacheStr = @"清除缓存";
+    NSInteger  size = 0;
+    //block 捕获
+    
+    size = self.size;
+    CGFloat sizeF = 0;
+    if (size>=1000*1000) {//大于1MB
+        sizeF = size/1000.0/1000.0;
+        cacheStr = [NSString stringWithFormat:@"%@(%.1fMB)",cacheStr,sizeF];
+        
+    }else if (size>=1000){//大于1KB
+        sizeF = size/1000.0;
+        cacheStr = [NSString stringWithFormat:@"%@(%.1fKB)",cacheStr,sizeF];
+        
+        
+    }else if (size>0){//大于0B
+        cacheStr = [NSString stringWithFormat:@"%@(%zdB)",cacheStr,size];
+    }
+    
+    cacheStr  = [cacheStr stringByReplacingOccurrencesOfString:@".0" withString:@""];
+    
+    
+    return cacheStr;
+    
+    
+    
+}
+
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 10;
+    return 1;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    KZPClearCacheCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
-    // Configure the cell...
+//    cell.textLabel.text = [KZPFileManager ];
     
     return cell;
 }
-*/
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+//        [KZPFileManager cleanCache];
+        [self.tableView reloadData];
+    }
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

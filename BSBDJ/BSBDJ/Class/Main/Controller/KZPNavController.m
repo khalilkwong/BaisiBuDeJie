@@ -22,6 +22,7 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[NSFontAttributeName] = [UIFont boldSystemFontOfSize:25];
     [bar setTitleTextAttributes:dict];
+    
 
    
     
@@ -54,13 +55,14 @@
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    //不是根控制器就隐藏 tabbar
     if (self.childViewControllers.count > 0) {
 
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[KZPBackView viewWithTarget:self action:@selector(back)]];
-        self.tabBarController.tabBar.hidden = YES;
+        viewController.hidesBottomBarWhenPushed = YES;
+        
     }
     [super pushViewController:viewController animated:animated];
-    
 }
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
@@ -68,6 +70,7 @@
 }
 - (void)back {
     [self popViewControllerAnimated:YES];
+    
 }
 
 

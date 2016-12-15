@@ -16,7 +16,7 @@
  *  @param color 颜色
  *  @param size  尺寸
  *
- *  @return
+ *  @ return
  */
 + (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size;
 
@@ -26,7 +26,7 @@
  *  @param color 图片颜色
  *  @param name  文本,居中显示
  *
- *  @return
+ *  @ return
  */
 + (UIImage *)imageWithColor:(UIColor *)color text:(NSString *)name;
 
@@ -65,7 +65,7 @@
 /**
  *  图片剪切为圆形
  *
- *  @param originalImage 原始图片
+
  *
  *  @return 剪切后的圆形图片
  */

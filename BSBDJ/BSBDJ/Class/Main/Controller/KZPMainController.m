@@ -105,6 +105,7 @@
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"KZPMeController" bundle:nil];
    KZPMeController *vc =  [sb instantiateViewControllerWithIdentifier:@"KZPMeController"];
+    
     [self setUpOneChildVC: vc WithTitle:@"我的" normalImageName:@"tabBar_me_icon" selectImageName:@"tabBar_me_click_icon"];
 }
 

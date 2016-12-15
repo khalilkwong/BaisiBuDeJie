@@ -10,6 +10,10 @@
 #import "KZPFollowItem.h"
 #import "KZPFollowCell.h"
 #import <MJExtension.h>
+#import "UIView+KZPViewController.h"
+#import <SVProgressHUD.h>
+
+
 
 @interface KZPFollowController ()
 @property(nonatomic,strong)NSArray *followArray;
@@ -28,6 +32,9 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"KZPFollowCell" bundle:nil] forCellReuseIdentifier:@"FollowCell"];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    UIView *view = [[UIView alloc]init];
+    KZPLog(@"%@",view.viewController) ;
+    
 }
 
 
@@ -58,18 +65,32 @@
     NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
     dictM[@"a"] = @"tags_list";
     dictM[@"c"] = @"subscribe";
+    
+    //提示正在下载关注列表
+    [SVProgressHUD showWithStatus:@"正在更新关注列表,请稍候..."];
+    
     //发送请求
-    [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:dictM progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        [responseObject writeToFile:@"/Users/khalil/Desktop/follow.plist" atomically:YES];
-        NSArray *dictArray = responseObject[@"rec_tags"];
-        NSMutableArray *followArray = [KZPFollowItem  mj_objectArrayWithKeyValuesArray:dictArray];
-        self.followArray = followArray;
-        [self.tableView reloadData];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        KZPLog(@"%@",error);
-    }];
-}
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:dictM progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [responseObject writeToFile:@"/Users/khalil/Desktop/follow.plist" atomically:YES];
+            NSArray *dictArray = responseObject[@"rec_tags"];
+            NSMutableArray *followArray = [KZPFollowItem  mj_objectArrayWithKeyValuesArray:dictArray];
+            self.followArray = followArray;
+            [self.tableView reloadData];
+            
+            [SVProgressHUD showSuccessWithStatus: @"更新成功"];
+            
+            [SVProgressHUD dismissWithDelay:1.0];
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            KZPLog(@"%@",error);
+
+            [SVProgressHUD showErrorWithStatus:@"更新失败"];
+             [SVProgressHUD dismissWithDelay:0.25];
+        }];
+
+    });
+    }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

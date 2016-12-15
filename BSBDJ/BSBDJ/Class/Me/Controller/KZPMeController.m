@@ -14,10 +14,11 @@
 #import <MJExtension.h>
 #import "KZPWebViewController.h"
 #import <WebKit/WebKit.h>
+#import "KZPLoginAndRegisterController.h"
 
 static NSUInteger const cols = 4;
-static NSUInteger const margin = 1;
-#define itemWH  ((ScreenW - (cols - 1) * margin) / cols)
+static NSUInteger const space = 1;
+#define itemWH  ((ScreenW - (cols - 1) * space) / cols)
 
 @interface KZPMeController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 @property(nonatomic,strong)NSMutableArray *meItemArray;
@@ -29,14 +30,18 @@ static NSUInteger const margin = 1;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpNav];
-    self.tableView.sectionFooterHeight = 0;
-    self.tableView.sectionHeaderHeight = 10;
-    self.tableView.contentInset = UIEdgeInsetsMake(-35, 0, 0, 0);
+    self.tableView.sectionFooterHeight = 10;
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.contentInset = UIEdgeInsetsMake(64 -35 + margin, 0, 49, 0);
     [self setUpCollectionView];
     [self downLoadItem];
-    self.navigationController.automaticallyAdjustsScrollViewInsets = YES;
-}
 
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+}
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBar.hidden = NO;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -47,10 +52,10 @@ static NSUInteger const margin = 1;
     //加到 tableView 的 footView
     UICollectionViewFlowLayout *fl = [[UICollectionViewFlowLayout alloc]init];
        fl.itemSize = CGSizeMake(itemWH, itemWH);
-    fl.minimumLineSpacing = margin;
-    fl.minimumInteritemSpacing = margin;
+    fl.minimumLineSpacing = space;
+    fl.minimumInteritemSpacing = space;
     
-    UICollectionView *collectionV = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 0, 300) collectionViewLayout:fl];
+    UICollectionView *collectionV = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 0, 0) collectionViewLayout:fl];
     collectionV.delegate = self;
     collectionV.dataSource = self;
     collectionV.backgroundColor = [UIColor clearColor];
@@ -66,13 +71,14 @@ static NSUInteger const margin = 1;
     dictM[@"a"] = @"square";
     dictM[@"c"] = @"topic";
     //发送请求
+   
     [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:dictM progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray *dictArray = responseObject[@"square_list"];
         NSMutableArray *itemArray = [KZPMeSquareItem mj_objectArrayWithKeyValuesArray:dictArray];
         self.meItemArray = itemArray;
         //计算行数
         NSInteger rows = (self.meItemArray.count + 3)/ cols;
-        CGFloat h = (itemWH + margin) * rows;
+        CGFloat h = (itemWH + space) * rows;
         self.collectionV.kzp_height = h;
         
         NSInteger num = self.meItemArray.count % cols;
@@ -126,15 +132,16 @@ static NSUInteger const margin = 1;
 - (void)settingBtnClick {
     KZPLog(@"settingBtnClick");
     KZPSettingController *settingVC = [[KZPSettingController alloc]init];
-    settingVC.hidesBottomBarWhenPushed = YES;
+
+    
     [self.navigationController pushViewController:settingVC animated:YES];
     
 }
 #pragma mark - UICollectionViewDataSource 
 
-//- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-//    return 1;
-//}
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.meItemArray.count;
@@ -144,7 +151,7 @@ static NSUInteger const margin = 1;
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     KZPMeItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MeItemCell" forIndexPath:indexPath];
-    
+
     cell.item = self.meItemArray[indexPath.item];
     
     return  cell;
@@ -152,14 +159,35 @@ static NSUInteger const margin = 1;
 
 #pragma mark - UICollectionViewDelegate
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
    
     KZPMeSquareItem *item = self.meItemArray[indexPath.row];
   
     KZPWebViewController *wbV = [[KZPWebViewController alloc]initWithNibName:@"KZPWebViewController" bundle:nil];
-    wbV.url = item.url;
-    [self.navigationController pushViewController:wbV animated:YES];
-    self.navigationController.navigationBar.hidden = YES;
+    if ([item.url hasPrefix:@"http"]) {
+         wbV.url = item.url;
+        wbV.titleText = item.name;
+       
+//         [self.navigationController pushViewController:wbV animated:YES];
+        [self.navigationController presentViewController:wbV animated:YES completion:nil];
+        
+    }else {
+        KZPLog(@"不是一个网页");
+    }
+     
+   
+   
+//    self.navigationController.navigationBar.hidden = YES;
+}
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+#pragma mark - tableViewDelegate 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        KZPLoginAndRegisterController *vc = [[KZPLoginAndRegisterController alloc]init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
 }
 
 

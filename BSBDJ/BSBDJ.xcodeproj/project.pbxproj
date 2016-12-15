@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CA8ACEFAD6F9C9503F99BC3 /* libPods-BSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */; };
+		1CA8ACEFAD6F9C9503F99BC3 /* libPods-BSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		F903DDD41DFBA53300E1E58D /* KZPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F903DDD31DFBA53300E1E58D /* KZPTextField.m */; };
 		F903DDD81DFC19E800E1E58D /* KZPMeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F903DDD71DFC19E800E1E58D /* KZPMeController.storyboard */; };
 		F903DDDB1DFC1B9800E1E58D /* KZPMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F903DDDA1DFC1B9800E1E58D /* KZPMeController.m */; };
 		F905FA4D1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */; };
 		F905FA501DF7285900D9EE8E /* KZPADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F905FA4F1DF7285900D9EE8E /* KZPADItem.m */; };
+		F90A85C41E016D5700A618F2 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		F9340A141E01329600F64DAD /* UIView+KZPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9340A131E01329600F64DAD /* UIView+KZPViewController.m */; };
 		F93C5E611DF7E3E300456F97 /* KZPADController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93C5E601DF7E3E300456F97 /* KZPADController.m */; };
 		F94BC3C31DF3D6B90037B478 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3C21DF3D6B90037B478 /* main.m */; };
 		F94BC3C61DF3D6B90037B478 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BC3C51DF3D6B90037B478 /* AppDelegate.m */; };
@@ -38,6 +40,8 @@
 		F970A0F91DFC358500ED5C88 /* KZPMeSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F970A0F81DFC358500ED5C88 /* KZPMeSquareItem.m */; };
 		F970A1031DFC46B500ED5C88 /* KZPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F970A1011DFC46B500ED5C88 /* KZPWebViewController.m */; };
 		F970A1041DFC46B500ED5C88 /* KZPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F970A1021DFC46B500ED5C88 /* KZPWebViewController.xib */; };
+		F98ABB691E0178EE007970A3 /* NSString+KZPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F98ABB681E0178EE007970A3 /* NSString+KZPExtension.m */; };
+		F98ABB751E017993007970A3 /* KZPClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F98ABB741E017993007970A3 /* KZPClearCacheCell.m */; };
 		F9A5E9231DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E91C1DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png */; };
 		F9A5E9241DF6E0DA004C7CE0 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E91D1DF6E0DA004C7CE0 /* LaunchImage-700-568h@2x.png */; };
 		F9A5E9251DF6E0DA004C7CE0 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E91E1DF6E0DA004C7CE0 /* LaunchImage-700@2x.png */; };
@@ -46,9 +50,13 @@
 		F9A5E9281DF6E0DA004C7CE0 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E9211DF6E0DA004C7CE0 /* LaunchImage.png */; };
 		F9A5E9291DF6E0DA004C7CE0 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E9221DF6E0DA004C7CE0 /* LaunchImage@2x.png */; };
 		F9A5E92E1DF6E117004C7CE0 /* KZPADController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A5E92C1DF6E117004C7CE0 /* KZPADController.xib */; };
+		F9CF4FEE1DFD5F1700F34A18 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CF4FEC1DFD5F1700F34A18 /* libAFNetworking.a */; };
+		F9CF4FEF1DFD5F1700F34A18 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CF4FED1DFD5F1700F34A18 /* libSDWebImage.a */; };
 		F9D5139D1DF5D7B9003BD029 /* KZPNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */; };
 		F9D513A01DF5D974003BD029 /* KZPBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D5139F1DF5D974003BD029 /* KZPBackView.m */; };
 		F9D513A31DF5E129003BD029 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D513A21DF5E129003BD029 /* UIView+frame.m */; };
+		F9ED96A71DFEA314006F297F /* UITextField+KZPPlaceHolderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED96A61DFEA314006F297F /* UITextField+KZPPlaceHolderColor.m */; };
+		F9ED96AA1DFEE5F6006F297F /* KZPFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED96A91DFEE5F6006F297F /* KZPFileManager.m */; };
 		F9FAD8B81DF85178007EE404 /* NSString+KZPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAD8B71DF85178007EE404 /* NSString+KZPURL.m */; };
 		F9FAD8BA1DF93E69007EE404 /* KZPFriendTrendsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FAD8B91DF93E69007EE404 /* KZPFriendTrendsController.xib */; };
 		F9FAD8BE1DF943FF007EE404 /* KZPLoginAndRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAD8BC1DF943FE007EE404 /* KZPLoginAndRegisterController.m */; };
@@ -62,9 +70,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		452CE998509392B1FFBB6052 /* Pods-BSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
 		59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BSBDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D731AE744B43470C5DDB6C /* Pods-BSBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.release.xcconfig"; sourceTree = "<group>"; };
-		F08513D13DB38449D587F446 /* Pods-BSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
 		F903DDD21DFBA53300E1E58D /* KZPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPTextField.h; path = BSBDJ/Class/New/Controller/KZPTextField.h; sourceTree = SOURCE_ROOT; };
 		F903DDD31DFBA53300E1E58D /* KZPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPTextField.m; path = BSBDJ/Class/New/Controller/KZPTextField.m; sourceTree = SOURCE_ROOT; };
 		F903DDD71DFC19E800E1E58D /* KZPMeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KZPMeController.storyboard; sourceTree = "<group>"; };
@@ -74,6 +82,8 @@
 		F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+KZPManager.m"; sourceTree = "<group>"; };
 		F905FA4E1DF7285900D9EE8E /* KZPADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPADItem.h; sourceTree = "<group>"; };
 		F905FA4F1DF7285900D9EE8E /* KZPADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPADItem.m; sourceTree = "<group>"; };
+		F9340A121E01329600F64DAD /* UIView+KZPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KZPViewController.h"; sourceTree = "<group>"; };
+		F9340A131E01329600F64DAD /* UIView+KZPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KZPViewController.m"; sourceTree = "<group>"; };
 		F93C5E5F1DF7E3E300456F97 /* KZPADController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPADController.h; sourceTree = "<group>"; };
 		F93C5E601DF7E3E300456F97 /* KZPADController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPADController.m; sourceTree = "<group>"; };
 		F94BC3BE1DF3D6B90037B478 /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +130,10 @@
 		F970A1001DFC46B500ED5C88 /* KZPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPWebViewController.h; sourceTree = "<group>"; };
 		F970A1011DFC46B500ED5C88 /* KZPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPWebViewController.m; sourceTree = "<group>"; };
 		F970A1021DFC46B500ED5C88 /* KZPWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KZPWebViewController.xib; sourceTree = "<group>"; };
+		F98ABB671E0178EE007970A3 /* NSString+KZPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KZPExtension.h"; sourceTree = "<group>"; };
+		F98ABB681E0178EE007970A3 /* NSString+KZPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KZPExtension.m"; sourceTree = "<group>"; };
+		F98ABB731E017993007970A3 /* KZPClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPClearCacheCell.h; path = BSBDJ/Class/Other/Category/KZPClearCacheCell.h; sourceTree = SOURCE_ROOT; };
+		F98ABB741E017993007970A3 /* KZPClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPClearCacheCell.m; path = BSBDJ/Class/Other/Category/KZPClearCacheCell.m; sourceTree = SOURCE_ROOT; };
 		F9A5E91C1DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		F9A5E91D1DF6E0DA004C7CE0 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		F9A5E91E1DF6E0DA004C7CE0 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -128,12 +142,18 @@
 		F9A5E9211DF6E0DA004C7CE0 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		F9A5E9221DF6E0DA004C7CE0 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		F9A5E92C1DF6E117004C7CE0 /* KZPADController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KZPADController.xib; sourceTree = "<group>"; };
+		F9CF4FEC1DFD5F1700F34A18 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		F9CF4FED1DFD5F1700F34A18 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
 		F9D5139B1DF5D7B9003BD029 /* KZPNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPNavBar.h; sourceTree = "<group>"; };
 		F9D5139C1DF5D7B9003BD029 /* KZPNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPNavBar.m; sourceTree = "<group>"; };
 		F9D5139E1DF5D974003BD029 /* KZPBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPBackView.h; sourceTree = "<group>"; };
 		F9D5139F1DF5D974003BD029 /* KZPBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPBackView.m; sourceTree = "<group>"; };
 		F9D513A11DF5E129003BD029 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		F9D513A21DF5E129003BD029 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		F9ED96A51DFEA314006F297F /* UITextField+KZPPlaceHolderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+KZPPlaceHolderColor.h"; sourceTree = "<group>"; };
+		F9ED96A61DFEA314006F297F /* UITextField+KZPPlaceHolderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+KZPPlaceHolderColor.m"; sourceTree = "<group>"; };
+		F9ED96A81DFEE5F6006F297F /* KZPFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPFileManager.h; sourceTree = "<group>"; };
+		F9ED96A91DFEE5F6006F297F /* KZPFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPFileManager.m; sourceTree = "<group>"; };
 		F9FAD8B61DF85178007EE404 /* NSString+KZPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KZPURL.h"; sourceTree = "<group>"; };
 		F9FAD8B71DF85178007EE404 /* NSString+KZPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KZPURL.m"; sourceTree = "<group>"; };
 		F9FAD8B91DF93E69007EE404 /* KZPFriendTrendsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KZPFriendTrendsController.xib; sourceTree = "<group>"; };
@@ -157,6 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CF4FEE1DFD5F1700F34A18 /* libAFNetworking.a in Frameworks */,
+				F9CF4FEF1DFD5F1700F34A18 /* libSDWebImage.a in Frameworks */,
 				1CA8ACEFAD6F9C9503F99BC3 /* libPods-BSBDJ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +189,8 @@
 		136FB85854A6484CAFAB4FD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9CF4FEC1DFD5F1700F34A18 /* libAFNetworking.a */,
+				F9CF4FED1DFD5F1700F34A18 /* libSDWebImage.a */,
 				59B8E9C6C7AF15A724B0A6AE /* libPods-BSBDJ.a */,
 			);
 			name = Frameworks;
@@ -175,8 +199,8 @@
 		C49517B07DF6E7CB726F10DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F08513D13DB38449D587F446 /* Pods-BSBDJ.debug.xcconfig */,
 				E5D731AE744B43470C5DDB6C /* Pods-BSBDJ.release.xcconfig */,
+				452CE998509392B1FFBB6052 /* Pods-BSBDJ.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -227,6 +251,7 @@
 		F94BC3D81DF3D85F0037B478 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				F9ED96A01DFE971F006F297F /* Service */,
 				F9A5E9171DF6E084004C7CE0 /* AD */,
 				F94BC3E11DF3D85F0037B478 /* Main */,
 				F94BC3D91DF3D85F0037B478 /* Essence */,
@@ -439,6 +464,10 @@
 		F94BC3EE1DF3D85F0037B478 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F98ABB671E0178EE007970A3 /* NSString+KZPExtension.h */,
+				F98ABB681E0178EE007970A3 /* NSString+KZPExtension.m */,
+				F9ED96A51DFEA314006F297F /* UITextField+KZPPlaceHolderColor.h */,
+				F9ED96A61DFEA314006F297F /* UITextField+KZPPlaceHolderColor.m */,
 				F9FF2AD41DFB199600E3C4CC /* UIImage+imageExtension.h */,
 				F9FF2AD51DFB199600E3C4CC /* UIImage+imageExtension.m */,
 				F9D513A11DF5E129003BD029 /* UIView+frame.h */,
@@ -453,6 +482,8 @@
 				F905FA4C1DF726BE00D9EE8E /* AFHTTPSessionManager+KZPManager.m */,
 				F9FAD8B61DF85178007EE404 /* NSString+KZPURL.h */,
 				F9FAD8B71DF85178007EE404 /* NSString+KZPURL.m */,
+				F9340A121E01329600F64DAD /* UIView+KZPViewController.h */,
+				F9340A131E01329600F64DAD /* UIView+KZPViewController.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -526,6 +557,8 @@
 		F94BC4491DF567410037B478 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F98ABB731E017993007970A3 /* KZPClearCacheCell.h */,
+				F98ABB741E017993007970A3 /* KZPClearCacheCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -618,6 +651,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F9ED96A01DFE971F006F297F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED96A11DFE971F006F297F /* Files */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F9ED96A11DFE971F006F297F /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED96A81DFEE5F6006F297F /* KZPFileManager.h */,
+				F9ED96A91DFEE5F6006F297F /* KZPFileManager.m */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -694,6 +744,7 @@
 				F9A5E9251DF6E0DA004C7CE0 /* LaunchImage-700@2x.png in Resources */,
 				F9FAD8C41DF95081007EE404 /* KZPLoginView.xib in Resources */,
 				F9FF2AD31DFB12F800E3C4CC /* KZPFollowCell.xib in Resources */,
+				F90A85C41E016D5700A618F2 /* (null) in Resources */,
 				F9A5E9271DF6E0DA004C7CE0 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				F9A5E9231DF6E0DA004C7CE0 /* LaunchImage-568h@2x.png in Resources */,
 				F9A5E9261DF6E0DA004C7CE0 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -758,11 +809,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98ABB751E017993007970A3 /* KZPClearCacheCell.m in Sources */,
 				F94BC4051DF3D97C0037B478 /* KZPNewController.m in Sources */,
+				F9340A141E01329600F64DAD /* UIView+KZPViewController.m in Sources */,
 				F94BC4111DF3E9AA0037B478 /* UIImage+Render.m in Sources */,
 				F94BC3F91DF3D8FE0037B478 /* KZPEssenceController.m in Sources */,
 				F970A1031DFC46B500ED5C88 /* KZPWebViewController.m in Sources */,
 				F9FAD8B81DF85178007EE404 /* NSString+KZPURL.m in Sources */,
+				F9ED96A71DFEA314006F297F /* UITextField+KZPPlaceHolderColor.m in Sources */,
 				F95193D11DFB0C5900229721 /* KZPFollowController.m in Sources */,
 				F94BC41A1DF456A60037B478 /* KZPNavController.m in Sources */,
 				F9FAD8C21DF95071007EE404 /* KZPLoginView.m in Sources */,
@@ -778,6 +832,7 @@
 				F9FF2AD61DFB199600E3C4CC /* UIImage+imageExtension.m in Sources */,
 				F95193C81DF9833300229721 /* KZPQuickLoginView.m in Sources */,
 				F94BC3C61DF3D6B90037B478 /* AppDelegate.m in Sources */,
+				F9ED96AA1DFEE5F6006F297F /* KZPFileManager.m in Sources */,
 				F93C5E611DF7E3E300456F97 /* KZPADController.m in Sources */,
 				F94BC44C1DF567A30037B478 /* KZPSettingController.m in Sources */,
 				F903DDD41DFBA53300E1E58D /* KZPTextField.m in Sources */,
@@ -786,6 +841,7 @@
 				F94BC3C31DF3D6B90037B478 /* main.m in Sources */,
 				F970A0F51DFC318900ED5C88 /* KZPMeItemCell.m in Sources */,
 				F9FF2AD21DFB12F800E3C4CC /* KZPFollowCell.m in Sources */,
+				F98ABB691E0178EE007970A3 /* NSString+KZPExtension.m in Sources */,
 				F9FAD8BE1DF943FF007EE404 /* KZPLoginAndRegisterController.m in Sources */,
 				F9FF2ACE1DFB103C00E3C4CC /* KZPFollowItem.m in Sources */,
 				F9D5139D1DF5D7B9003BD029 /* KZPNavBar.m in Sources */,
@@ -856,9 +912,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Headers/Public",
+					"${PODS_ROOT}/Headers/Public/AFNetworking",
+					"${PODS_ROOT}/Headers/Public/SVProgressHUD",
+					"${PODS_ROOT}/Headers/Public/MJExtension",
+					"${PODS_ROOT}/Headers/Public/SDWebImage",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					$PODS_CONFIGURATION_BUILD_DIR/AFNetworking,
+					$PODS_CONFIGURATION_BUILD_DIR/MJExtension,
+					$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD,
+					$PODS_CONFIGURATION_BUILD_DIR/SDWebImage,
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -898,8 +970,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Headers/Public",
+					"${PODS_ROOT}/Headers/Public/AFNetworking",
+					"${PODS_ROOT}/Headers/Public/SVProgressHUD",
+					"${PODS_ROOT}/Headers/Public/MJExtension",
+					"${PODS_ROOT}/Headers/Public/SDWebImage",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					$PODS_CONFIGURATION_BUILD_DIR/AFNetworking,
+					$PODS_CONFIGURATION_BUILD_DIR/MJExtension,
+					$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD,
+					$PODS_CONFIGURATION_BUILD_DIR/SDWebImage,
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -907,18 +995,34 @@
 		};
 		F94BC3D61DF3D6B90037B478 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F08513D13DB38449D587F446 /* Pods-BSBDJ.debug.xcconfig */;
+			baseConfigurationReference = 452CE998509392B1FFBB6052 /* Pods-BSBDJ.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = C2QY9Q2TP8;
 				GCC_PREFIX_HEADER = BSBDJ/BSBDJ.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = BSBDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.khalil.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -926,16 +1030,32 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5D731AE744B43470C5DDB6C /* Pods-BSBDJ.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = C2QY9Q2TP8;
 				GCC_PREFIX_HEADER = BSBDJ/BSBDJ.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = BSBDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.khalil.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -949,7 +1069,7 @@
 				F94BC3D41DF3D6B90037B478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F94BC3D51DF3D6B90037B478 /* Build configuration list for PBXNativeTarget "BSBDJ" */ = {
 			isa = XCConfigurationList;
@@ -958,7 +1078,7 @@
 				F94BC3D71DF3D6B90037B478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
