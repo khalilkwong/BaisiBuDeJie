@@ -28,11 +28,12 @@ static NSUInteger const space = 1;
 @implementation KZPMeController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     [self setUpNav];
     self.tableView.sectionFooterHeight = 10;
     self.tableView.sectionHeaderHeight = 0;
-    self.tableView.contentInset = UIEdgeInsetsMake(64 -35 + margin, 0, 49, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(64 - 35 + kzp_margin, 0, 49, 0);
     [self setUpCollectionView];
     [self downLoadItem];
 
